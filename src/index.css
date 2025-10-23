@@ -1,0 +1,58 @@
+/* Local overrides (keep minimal). The main site styles come from /static/css/main.8dda1c34.css */
+html, body, #root { height: 100%; }
+
+/* Typography polish */
+h1, h2, h3 { margin-top: 0; }
+.page-container h1, .products-page h1 { margin-bottom: 0.75rem; }
+.page-intro { color: #555; margin-bottom: 1.25rem; line-height: 1.55; }
+
+/* Disclaimer banner */
+.disclaimer-banner { background:#fff7e6; border-bottom:1px solid #ffe0b3; color:#6b4e16; font-size: 12px; }
+.disclaimer-inner { margin:0 auto; max-width:1200px; padding:8px 16px; text-align:center; }
+
+/* Product disclaimer text */
+.product-disclaimer { color:#666; font-size: 12px; margin-top: 4px; }
+
+/* Quality section tweaks for better balance across screen sizes */
+.quality-icon { width: 28px; height: 28px; }
+@media (min-width: 576px) { .quality-icon { width: 32px; height: 32px; } }
+@media (min-width: 768px) { .quality-icon { width: 36px; height: 36px; } }
+@media (min-width: 1200px) { .quality-icon { width: 40px; height: 40px; } }
+
+.blue-text { margin-top: 0.5rem; }
+.right-content h2 { margin-top: 0; margin-bottom: 0.75rem; }
+.right-content ul { margin-top: 0.5rem; }
+.right-content li { list-style: none; }
+.right-content li::before { content: "✔ "; color: #0a2f7b; margin-right: 4px; }
+
+/* Mobile polish for the three info cards under the hero banner */
+@media (max-width: 575.98px) {
+  .info-cards { padding: 12px; gap: 12px; }
+  .info-cards .card { 
+    border: 0; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    padding: 16px;
+  }
+  .info-cards .card h3 { 
+    margin: 0 0 6px 0; 
+    font-size: 1rem; 
+    display: flex; 
+    align-items: center; 
+    gap: 6px;
+  }
+  .info-cards .card p { 
+    margin: 0; 
+    font-size: 0.9rem; 
+    line-height: 1.45;
+  }
+  /* Gradients for a more modern feel while respecting original colors */
+  .info-cards .card.green { background: linear-gradient(135deg, #00b3b3, #00c6a7); }
+  .info-cards .card.blue { background: linear-gradient(135deg, #0a2f7b, #1747b1); }
+  .info-cards .card.dark-blue { background: linear-gradient(135deg, #072159, #0b2f7d); }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .info-cards { gap: 16px; }
+  .info-cards .card { border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.06); }
+}
