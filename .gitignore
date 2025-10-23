@@ -22,3 +22,6 @@ Thumbs.db
 # Env
 .env
 .env.*
+# Local artifacts not needed in repo
+laboratorydna-mirror.zip
+Users/
