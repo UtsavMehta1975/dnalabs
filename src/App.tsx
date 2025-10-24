@@ -474,7 +474,7 @@ function HomePage() {
               <p style={{ color: 'white' }}>Sarms</p>
             </div>
             <div className="product-box">
-              <img className="product-image" src="/static/media/wheyproteinblend.jpeg" alt="Whey Protein Blend" />
+              <img className="product-image" src="/assets/products/L-carnitine.jpeg" alt="L-Carnitine" />
               <p style={{ color: 'white' }}>Dietary supplements</p>
             </div>
           </div>
