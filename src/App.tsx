@@ -177,7 +177,7 @@ function dietaryPriceGBP(src: string): number | undefined {
   const base = (src.split('/').pop() || '').replace(/\.[^.]+$/, '')
   const key = base.toLowerCase().replace(/[^a-z0-9]+/g, '')
   if (key === 'creatinemonohydratemangoflavor' || key === 'creatinemonohydratemangoflavour') return 25
-  if (key === 'ecaburn') return 50
+  if (key === 'ecaburn') return 30
   if (key === 'lcarnitine') return 30
   if (key === 'lcarnitineliquid') return 45
   if (key === 'massgainer') return 60
@@ -207,6 +207,9 @@ function dietaryDescription(src: string): string {
   }
   if (key === 'waterout') {
     return 'Water Out blends are generally discussed for short‑term water balance support. Users emphasize hydration, electrolyte awareness, and responsible, time‑limited use. This summary is educational only and not a recommendation. Seek professional guidance to determine appropriateness and to supervise safe practices.'
+  }
+  if (key === 'isowheyprotein') {
+    return 'ISO Whey Protein is a highly filtered whey isolate discussed for lean protein intake with minimal carbs and fats. Typical considerations include timing around workouts and daily protein targets. This is educational content only. Consult a qualified professional for suitability, intolerances, and safe, individualized use.'
   }
   if (key === 'wheyprotineblend' || key === 'wheyproteinblend') {
     return 'Whey Protein Blend is commonly used to help meet daily protein targets that support muscle repair and recovery. Quality outcomes rely on total diet and training consistency. This information is educational only. Consult a qualified professional for personalized advice, intolerances, and safe usage.'
