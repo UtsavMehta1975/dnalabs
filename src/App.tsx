@@ -234,7 +234,7 @@ function ProductsPageByCategory() {
     return (
       <section id="products" className="products-page">
         <h1>{title}</h1>
-        <p className="page-intro">Dietary supplements information hub. Review composition, suggested usage, and safety notes. Always consult a professional before use.</p>
+        <p className="page-intro">Dietary Supplements information hub. Review composition, suggested usage, and safety notes. Always consult a professional before use.</p>
         <div className="product-grid">
           {images.map((src) => (
             <div key={src} className="product-card" onClick={() => openModal(src)} style={{ cursor: 'pointer' }}>
@@ -475,7 +475,7 @@ function HomePage() {
             </div>
             <div className="product-box">
               <img className="product-image" src="/assets/products/L-carnitine.jpeg" alt="L-Carnitine" />
-              <p style={{ color: 'white' }}>Dietary supplements</p>
+              <p style={{ color: 'white' }}>Dietary Supplements</p>
             </div>
           </div>
         </div>
