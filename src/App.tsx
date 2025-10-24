@@ -68,20 +68,7 @@ function Navbar() {
   )
 }
 
-function Hero() {
-  return (
-    <section id="home" className="medical-banner">
-      <div className="banner-section">
-        <div className="text-content">
-          <h1 className="">Providing Best Medical Products</h1>
-          <p>The health and well-being of our customers will always be our priority, so we follow best practices for quality and cleanliness.</p>
-          <a href="#products" className="btn-primary">Browse Products</a>
-        </div>
-        <img className="product-image" src="/assets/products/labImage.b53be4015370b3690bc3.png" alt="Lab" />
-      </div>
-    </section>
-  )
-}
+// Hero inlined inside HomePage; separate function removed
 
 function ProductCarousel() {
   const settings = { dots: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2500, arrows: true, adaptiveHeight: true } as const
@@ -179,6 +166,7 @@ function prettyDietaryNameFromSrc(src: string): string {
   if (key === 'lcarnitineliquid') return 'L‑Carnitine (Liquid)'
   if (key === 'massgainer') return 'Mass Gainer'
   if (key === 'waterout') return 'Water Out'
+  if (key === 'isowheyprotein') return 'ISO Whey Protein'
   if (key === 'wheyprotineblend' || key === 'wheyproteinblend') return 'Whey Protein Blend'
   return base
     .replace(/[-_]+/g, ' ')
@@ -194,6 +182,7 @@ function dietaryPriceGBP(src: string): number | undefined {
   if (key === 'lcarnitineliquid') return 45
   if (key === 'massgainer') return 60
   if (key === 'waterout') return 30
+  if (key === 'isowheyprotein') return 90
   if (key === 'wheyprotineblend' || key === 'wheyproteinblend') return 70
   return undefined
 }
@@ -510,11 +499,7 @@ function AboutPage() {
   )
 }
 
-function ProductsPage() {
-  return (
-    <ProductGrid />
-  )
-}
+// Removed unused ProductsPage
 
 function ContactPage() {
   return (
